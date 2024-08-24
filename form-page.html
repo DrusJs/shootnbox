@@ -17,18 +17,18 @@
         <main class="main">
             <section class="main-section">
                 <div class="container form-page__wrapper">
-                    <div class="form-page__postalcode form-page__content">
+                    <div class="form-page__postalcode form-page__content js-form-tab active">
                         <div class="form-page__header-wrapper">
                             <h2 class="title bg-title">Code postal</h2>
                             <h2 class="title">Du lieu d’évènement</h2>
                         </div>
                         <p class="text-large">Pour commencer, veuillez renseigner le code postal 
                             de votre lieu d’évènement</p>
-                        <form action="" class="form-page__form">
+                        <div class="form-page__form">
                             <div class="input__wrapper">
                                 <input type="number" class="input text-large input--boxshadow" placeholder="Code postal">
                             </div>
-                            <button class="next-button">
+                            <button class="next-button" onclick="swapTab(this)">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="37.546" height="33.413" viewBox="0 0 37.546 33.413">
                                     <g id="Сгруппировать_24" data-name="Сгруппировать 24" transform="translate(2.5 3.511)">
                                       <line id="Линия_10" data-name="Линия 10" x2="31.534" transform="translate(0 13.195)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="5"/>
@@ -37,9 +37,9 @@
                                     </g>
                                   </svg>                              
                             </button>
-                        </form>
+                        </div>
                     </div>
-                    <div class="form-page__content form-page__type" style="display: none;">
+                    <div class="form-page__content form-page__type js-form-tab">
                         <div class="form-page__header-wrapper">
                             <h2 class="title bg-title">Type</h2>
                             <h2 class="title">D’ÉVÈNEMENT</h2>
@@ -47,12 +47,12 @@
                         <div class="type__content-wrapper">
                             <p class="text-large">Votre évènement sera t-il :</p>
                             <div class="type__button-wrapper">
-                                <button class="button text-large">Professionnel</button>
-                                <button class="button text-large">Privé</button>
+                                <button class="button text-large" onclick="swapTab(this)">Professionnel</button>
+                                <button class="button text-large" onclick="swapTab(this)">Privé</button>
                             </div>
                         </div>
                     </div>
-                    <div class="form-page__content form-page__confirm" style="display: none;">
+                    <div class="form-page__content form-page__confirm js-form-tab">
                         <div class="form-page__header-wrapper">
                             <h2 class="title bg-title">VOTRE BORNE</h2>
                         </div>
